@@ -1,10 +1,14 @@
-<div class="container-fluid project-container">
+<div class="container project-container">
     <h1 class="project-heading">Recent Projects</h1>
   
     <div class="projects">
-      <div *ngFor="let project of projects" class="project">
+      <div *ngFor="let project of projects" class="project-card">
+        <div class="icon-container">
+          <i class="{{ project.icon }}"></i>
+        </div>
         <div class="project-content">
           <h3>{{ project.title }}</h3>
+          <h4>{{ project.subtitle }}</h4>
           <p>{{ project.description }}</p>
           <a [href]="project.link" target="_blank" class="project-link">View Project</a>
           <div class="tech-stack">

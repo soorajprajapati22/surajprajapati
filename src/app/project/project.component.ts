@@ -6,21 +6,25 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './project.component.html',
-  styleUrl: './project.component.css'
+  styleUrls: ['./project.component.css']
 })
 export class ProjectComponent {
   projects = [
     {
-      title: "ESARWA SOFTWARE (Web Development)",
-      description: "Developed a comprehensive company website as a full-stack solution, ensuring seamless functionality.",
+      title: "ESARWA SOFTWARE",
+      subtitle: "Web Development",
+      description: "Developed a full-stack company website ensuring seamless functionality.",
       link: "https://esarwa.com",
-      tech: ["Angular", "Bootstrap", "Material UI", "TypeScript"]
+      tech: ["Angular", "Bootstrap", "Material UI", "TypeScript"],
+      icon: "fas fa-globe"
     },
     {
-      title: "ESARWA MOBILE APP (Mobile App Development)",
-      description: "Developed a cross-platform mobile application using Ionic Framework with Capacitor, integrating backend APIs for seamless data exchange.",
+      title: "ESARWA MOBILE APP",
+      subtitle: "Mobile App Development",
+      description: "Built a cross-platform app with Ionic & Capacitor, integrating backend APIs.",
       link: "https://play.google.com/store/apps/details?id=com.esarwa.app",
-      tech: ["Ionic", "Capacitor", "Angular", "TypeScript"]
+      tech: ["Ionic", "Capacitor", "Angular", "TypeScript"],
+      icon: "fas fa-mobile-alt"
     }
   ];
 }
