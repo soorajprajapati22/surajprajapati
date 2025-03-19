@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-  mainNumber: string = "+91 98765 43210";
-  mail: string = 'surajprajapati@gmail.com';
+  mainNumber: string = "+91 70215 35750";
+  mail: string = 'surajprajapati5750@gmail.com';
 
   socialLinks = [
     { name: 'Instagram', url: 'https://www.instagram.com', icon: 'fab fa-instagram' },
