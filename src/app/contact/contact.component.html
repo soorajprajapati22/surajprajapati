@@ -1,0 +1,28 @@
+<div class="container-fluid contact-container">
+  <div class="contact-content row">
+    <!-- Left Section -->
+    <div class="col-md-6">
+      <h1 class="contact-heading">Let's Create Together</h1>
+    </div>
+
+    <!-- Right Section -->
+    <div class="col-md-6 contact-info text-md-end">
+      <div class="socials">
+        <h3>Follow me on my socials!</h3>
+        <ul class="social-links">
+          <li *ngFor="let social of socialLinks">
+            <a [href]="social.url" target="_blank">
+              <i [class]="social.icon"></i> {{ social.name }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collab">
+        <h3>Reach out for a collab!</h3>
+        <p>Email: <a href="mailto:{{ mail }}">{{ mail }}</a></p>
+        <p>Phone: {{ mainNumber }}</p>
+      </div>
+    </div>
+  </div>
+</div>

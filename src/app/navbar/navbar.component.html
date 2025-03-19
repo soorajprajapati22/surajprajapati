@@ -1,0 +1,25 @@
+<nav class="navbar">
+  <div class="logo">
+      <span class="name">Suraj</span> 
+      <span class="highlight">Prajapati</span>
+  </div>
+
+  <div class="nav-links" [class.active]="menuOpen">
+      <ul>
+          <li><a routerLink="/" (click)="closeMenu()">HOME</a></li>
+          <li><a routerLink="/about" (click)="closeMenu()">ABOUT ME</a></li>
+          <li><a routerLink="/project" (click)="closeMenu()">PROJECT</a></li>
+          <li><a href="https://www.linkedin.com" target="_blank" (click)="closeMenu()">LINKEDIN</a></li>
+          <li><a href="https://www.github.com" target="_blank" (click)="closeMenu()">GITHUB</a></li>
+          <li><a (click)="downloadResume()">RESUME</a></li>
+          
+      </ul>
+  </div>
+
+  <button class="contact-btn" routerLink="/contact">Contact Me</button>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger" (click)="toggleMenu()">
+      ☰
+  </div>
+</nav>

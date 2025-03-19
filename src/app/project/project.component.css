@@ -1,0 +1,131 @@
+/* Container */
+.project-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+/* Heading */
+.project-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+/* Project Grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Project Card */
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Hover Effect */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Content */
+.project-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Project Link */
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.project-link:hover {
+    background: #0056b3;
+}
+
+/* Tech Stack */
+.tech-stack {
+    margin-top: 10px;
+}
+
+.chip {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #ff8c00;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 3px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.chip:hover {
+    transform: scale(1.1);
+    background: orange;
+}
+
+/* 📌 Responsive Adjustments */
+@media (max-width: 1024px) {
+    .project-heading {
+        font-size: 2rem;
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .project-heading {
+        font-size: 1.8rem;
+    }
+
+    .project {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-heading {
+        font-size: 1.5rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-content p {
+        font-size: 0.9rem;
+    }
+}

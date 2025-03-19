@@ -1,0 +1,23 @@
+<div class="container-fuild">
+<div class="home-container">
+    <!-- Rotating Text Section -->
+    <div class="text-wrapper">
+      <div class="text-section">
+        <h1>
+          “Building idea into <br />
+          reality, one line of <br />
+          code at a <span class="highlight">time</span>”
+        </h1>
+      </div>
+    </div>
+  <!-- Tech Stack Chips Section -->
+  <div class="chips-container">
+    <span *ngFor="let tech of techStack" class="chip">{{ tech }}</span>
+  </div>
+    
+  </div>
+</div>
+
+  <app-about-me></app-about-me>
+  <app-project></app-project>
+  <app-contact></app-contact>
